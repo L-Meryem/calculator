@@ -1,0 +1,82 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  }
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1,
+input{
+  padding: 10px;
+  /* border: 1px solid gray; */
+  font-weight: 600;
+  font-size: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+}
+
+main{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: max(300px, 60%);
+  margin: 60px auto;
+   grid-auto-flow: dense;
+   border-radius: 10px;
+   border: 2px solid gray;
+}
+
+main > *{
+  height: 80px;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+h1:first-of-type{
+  grid-column: 1/-1;
+  color:gray;
+  
+}
+#numberOne,
+#numberTwo{
+  grid-column:span 2;
+}
+
+.yellow{
+  background-color: rgba(242, 214, 4, 0.861);
+  color:  rgb(27, 25, 42);
+}
+#result{
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+}
+
+
+@media screen and (max-width: 550px) {
+  main{
+     grid-template-columns: 1fr 1fr;
+  }
+}
