@@ -3,53 +3,52 @@
   box-sizing: border-box;
   }
 
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
-
-.clear {
-	clear: both;
-}
-
-/******************************************
-/* BASE STYLES
-/*******************************************/
-
-
 /******************************************
 /* LAYOUT
 /*******************************************/
+body{
+  background-color: rgb(22, 24, 26);
+}
+
+main{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 500px;
+  min-width: 400px;
+  margin: 60px auto;
+  grid-auto-flow: dense;
+  border-radius: 10px;
+  border: 2px solid gray;
+}
+
+main > *{
+  min-height: 80px;
+}
+
 h1,
 input{
-  padding: 10px;
-  /* border: 1px solid gray; */
   font-weight: 600;
   font-size: 2.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid gray;
+  border-radius: 10px;
 }
 
-main{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: max(300px, 60%);
-  margin: 60px auto;
-   grid-auto-flow: dense;
-   border-radius: 10px;
-   border: 2px solid gray;
+h1{
+  margin: 2px;
 }
 
-main > *{
-  height: 80px;
+input{
+  text-align: right;
+  border-radius: 8px;
+  width: 95%;
+  height: 80%;
+  background-color: rgb(204, 220, 226);
 }
+
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -57,26 +56,38 @@ main > *{
 h1:first-of-type{
   grid-column: 1/-1;
   color:gray;
+  background-color: tomato;
   
 }
-#numberOne,
-#numberTwo{
-  grid-column:span 2;
+
+.clear{
+  grid-column: span 2;
 }
+
+.number{
+  background-color: rgba(11, 168, 246, 0.238);
+  color: white;
+}
+
+.zero{
+  grid-column: span 2;
+}
+
 
 .yellow{
-  background-color: rgba(242, 214, 4, 0.861);
+  background-color: tomato;
   color:  rgb(27, 25, 42);
-}
-#result{
-  width: 100%;
-  text-align: left;
-  padding-left: 20px;
+  grid-column: 4/5;
 }
 
+.number:active,
+.yellow:active  {
+  background-color: #e5e5e5;
+  color:black;
+}
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 360px) {
   main{
-     grid-template-columns: 1fr 1fr;
+    width: 99%;
   }
 }
