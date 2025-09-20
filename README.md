@@ -1,11 +1,26 @@
-# My Calculator
-An upgrade of the [2 values calculator](https://github.com/L-Meryem/2-values-calculator) without using eval().
+# Calculator
+An upgrade of the [2 values calculator](https://github.com/L-Meryem/2-values-calculator) without the use of eval().
 
-**Tech used:** HTML, CSS and JavaScript
+[Try the Live demo!](https://l-meryem.github.io/calculator)
 
-**Live project:** https://l-meryem.github.io/calculator
 
-<img width="518" height="524" alt="calculator" src="https://github.com/user-attachments/assets/f79a1436-b91f-473a-9c08-f48ed59cb302" />
+<a href="" target="_blank" ><img width="400" alt="calculator" src="https://github.com/user-attachments/assets/f79a1436-b91f-473a-9c08-f48ed59cb302" /></a>
+
+
+### Tech used 
+ - `HTML`
+ - `CSS`
+ - `JavaScript`
+
+### Lessions Learned
+- Extracting numbers and operator from a string and storing them into an array
+- Writing meaningful git commit messages
+- Organizing my code into functions
+
+
+
+
+
 
 
 
