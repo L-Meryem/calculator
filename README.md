@@ -1,10 +1,10 @@
 # Calculator
-An upgrade of the [2 values calculator](https://github.com/L-Meryem/2-values-calculator) without the use of eval().
+An upgrade of the 2 values calculator without the use of eval().
 
 [Try the Live demo!](https://l-meryem.github.io/calculator)
 
 
-<a href="" target="_blank" ><img width="400" alt="calculator" src="https://github.com/user-attachments/assets/f79a1436-b91f-473a-9c08-f48ed59cb302" /></a>
+<a href="https://l-meryem.github.io/calculator" target="_blank" ><img width="400" alt="calculator" src="https://github.com/user-attachments/assets/f79a1436-b91f-473a-9c08-f48ed59cb302" /></a>
 
 
 ### Tech used 
